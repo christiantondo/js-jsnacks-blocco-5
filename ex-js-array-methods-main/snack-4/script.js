@@ -7,3 +7,12 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+/* Versione 1 - Non penso sia corretta ma funziona(?), perché?
+const authorNames = posts.map((author, i) => posts[i].author);
+console.log("Stampo i nomi degli autori", authorNames)
+*/
+
+// Versione 2 - Okya ora è chiaro
+const authorNames = posts.map(name => name.author);
+console.log(authorNames);
