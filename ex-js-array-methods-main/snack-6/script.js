@@ -12,10 +12,11 @@ const zucchine = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+
 //const bigZuc = zucchine.filter(zucchina => zucchina.length >= 15)
 // const smallZuc = zucchine.filter(zucchina => zucchina.length < 15)
 
-
+/*
 // Versione con funzione completa
 const bigZuc = []
 const smallZuc = []
@@ -28,4 +29,13 @@ const sortZuc = zucchine.forEach(zucchina => {
 
 console.log(bigZuc)
 console.log(smallZuc)
+*/
 
+// Versione con ternario, bellissima e compatta
+const bigZuc = []
+const smallZuc = []
+
+zucchine.forEach(zucchina => (zucchina.length >= 15 ? bigZuc : smallZuc).push(zucchina));
+
+console.log(bigZuc)
+console.log(smallZuc)
